@@ -159,7 +159,7 @@
             <div className="flex items-center gap-1">
              <h1 className="text-2xl font-black italic tracking-tighter flex">
               {/* ✏️ [แก้ได้] เปลี่ยนชื่อแอปที่นี่ */}
-              {"Nori Design".split('').map((char, index) => (
+              {"Test".split('').map((char, index) => (
                 <span 
                   key={index} 
                   className={`bg-gradient-to-br from-[#9673D2] to-[#CCAAE6] bg-clip-text text-transparent drop-shadow-sm inline-block animate-text-wave pb-2 ${char === ' ' ? 'w-2.5' : 'pr-[1.5px]'}`} 
@@ -551,7 +551,7 @@
       // 🌐 API: ลิงก์ Google Apps Script Web App
       // ==========================================
       // ✏️ [แก้ได้] เปลี่ยน URL ตรงนี้เมื่อ Deploy Google Apps Script ใหม่
-      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx-2OX7kdX_I1nOQnR0ufdt9Z_rfcqXBhTIUoBMhLq8QqWhKT55Z7gfVhgs0V-TB79q/exec";
+      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyuVRcTjOGlkHeIXJQIlpnk8D5FoOdX5oYftb3ujdV_cEV9zsDi_O3XgTvVehyU2SPVcw/exec";
 
       // ฟังก์ชันเรียก API (POST) — ไม่ต้องแก้
       const fetchAPI = async (payload) => {
@@ -573,7 +573,7 @@
       // ==========================================
       // ✏️ [แก้ได้] เปลี่ยน document.title เป็นชื่อแท็บที่ต้องการ
       useEffect(() => {
-        document.title = "Nori Design"; // ✏️ ชื่อ tab บน browser
+        document.title = "test admin"; // ✏️ ชื่อ tab บน browser
         
         fetch(WEB_APP_URL + "?action=getInitialData")
           .then(res => res.json())
@@ -1206,3 +1206,4 @@
   </script>
 </body>
 </html>
+
